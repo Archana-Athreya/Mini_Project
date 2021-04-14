@@ -12,7 +12,7 @@ src/Functions.c
 
 # All test source files
 TEST_SRC = src/Functions.c\
-test/Functions.c\
+test/test.c\
 unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
