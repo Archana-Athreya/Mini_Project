@@ -18,4 +18,5 @@ int search(struct customer[], int, int);
 void deposit(struct customer[], int, int, int);
 void withdraw(struct customer[], int, int, int);
 int check(char *pass,char *password);
-#endif
+
+#endif 
