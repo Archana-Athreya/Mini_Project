@@ -35,7 +35,7 @@ void account(struct customer list[80], int s)
 		fseek(stdin,0,SEEK_END);
 		
         printf("Enter name :");
-        gets(list[i].name);
+        fgets(list[i].name,20,stdin);
         list[i].balance = 0;
 		
     } 
