@@ -94,6 +94,6 @@ void withdraw(struct customer list[], int s, int number, int amt)
     else
     {
         list[i].balance -= amt;
-    }
+    } 
 }
 
