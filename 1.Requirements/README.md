@@ -16,4 +16,10 @@
  - Deposit or withdraw of cash as per the customer's requirement.
  - Bank Employee can search for an account using account number.
  - Account details of the customers can be displayed.
+ 
+ ### SWOT Analysis
+ <p align="center">
+  <img width="460" height="460" src="https://github.com/Archana-Athreya/Mini_Project/blob/1ebb48318427db268b8bdb79791a4102882d884f/1.Requirements/SWOT.png">
+</p>
+
 
