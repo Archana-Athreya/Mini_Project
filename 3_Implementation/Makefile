@@ -1,70 +1,62 @@
 
 	
-	# Name of the project
-PROJECT_NAME = bank_management_system
+	PROJ_NAME = bank_proj
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-# Output directory
-BUILD = build
+SRC =src/Functions.c
 
-# All source code files
-SRC = main.c\
-src/Functions.c
 
-# All test source files
-TEST_SRC = src/Functions.c\
-test/test.c\
-unity/unity.c\
+COV_SRC = test.c
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_SRC = test/test.c \
+unity/unity.c 
+INC_H = inc
+INC_T = unity
 
-# All include folders with header files
-INC	= -Iinc\
--Iunity\
-
-#Library Inlcudes
-#if working with CUnit 
-#INCLUDE_LIBS = -lcunit
-INCLUDE_LIBS =
-
-# Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
-
-# Document files
-DOCUMENTATION_OUTPUT = documentation/html
-
-# Default target built
-$(PROJECT_NAME):all
-
-# Run the target even if the matching name exists
+ifdef OS
+   RM = del 
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 .PHONY: run clean test doc all
 
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+all:
+	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJ_NAME).$(EXEC))
+	
+run:
+	$(call FixPath,$(PROJ_NAME).$(EXEC))
+test:
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 
-# Call `make run` to run the application
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+coverage:
+	cp test/test.c .
+	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(COV_SRC)
+	$(RM) *.$(EXEC)
+	
+	
+	$(RM) test.c
 
-# Document the code using Doxygen
-#doc:
-#	make -C ./documentation
 
-# Build and run the unit tests
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
-#Coverage
-#coverage:$(BUILD)
-	#g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	#./$(TEST_OUTPUT)
-#valgrind
+cppcheck:
+	cppcheck --enable=all $(SRC) main.c
+debug:
+	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
+	gdb $(PROJ_NAME).$(EXEC)
+
 valgrind:
-	valgrind ./Test_$(PROJECT_NAME).$(EXEC)
+	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
 
-# Remove all the built files, invoke by `make clean`
+
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+	
+	$(RM) *.$(EXEC)
 
-# Create new build folder if not present
-$(BUILD):
-	mkdir build
