@@ -1,4 +1,4 @@
-###### Bank Management System 
+# Bank Management System
 
 ![Alt text](https://github.com/Archana-Athreya/Mini_Project/blob/0a4f4b6624b54c2f2f12eae12cf779ccaeab8874/1.Requirements/Bank.png)
 
