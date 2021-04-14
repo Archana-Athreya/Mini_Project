@@ -4,7 +4,7 @@
 void setUp(){}
 void tearDown(){}
 void testadd(void){
-	TEST_ASSERT_EQUAL(0,check("archana","archana"));
+	TEST_ASSERT_EQUAL(0,check("archana1","archana1"));
 	
 }
 int main()
