@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "bank.h"
@@ -15,12 +14,7 @@ int main()
     char pass[9],password[9]="archana1";
 	login:
     printf("\n\n\t\tEnter the password to login at least 8 characters long:");
-	for(i=0;i<8;i++)
-	{
-	pass[i]=getch();
-	printf("*");
-	}
-	pass[i]='\0';
+	scanf("%s",pass[i]);
 	c=check(pass,password);
 	if(c)
 	{
