@@ -51,7 +51,7 @@ This is the simple implementaion of the Bank Management System and therefore doe
     <th>Category</th>
     <th>status</th>
   </tr>
-  
+  <table style="width:100%">
 <tr>
     <td>HLR01</td>
     <td>User should be able to login with his credentials</td>
@@ -86,6 +86,6 @@ This is the simple implementaion of the Bank Management System and therefore doe
     <td>Technical</td>
     <td>implemented</td>
   </tr>
-  
+  </table>
   ##
 
