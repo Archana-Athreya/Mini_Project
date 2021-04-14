@@ -1,12 +1,12 @@
 
 	
-	PROJ_NAME = bank_proj
+PROJ_NAME = bank_proj
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 SRC =src/Functions.c
 
 
-COV_SRC = test.c
+Bank_SRC = test.c
 
 TEST_SRC = test/test.c \
 unity/unity.c 
@@ -39,7 +39,7 @@ coverage:
 	cp test/test.c .
 	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(COV_SRC)
+	gcov -a $(Bank_SRC)
 	$(RM) *.$(EXEC)
 	
 	
