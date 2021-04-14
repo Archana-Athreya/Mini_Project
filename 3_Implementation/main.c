@@ -14,7 +14,7 @@ int main()
     char pass[9],password[9]="archana1";
 	login:
     printf("\n\n\t\tEnter the password to login at least 8 characters long:");
-	scanf("%s",pass[i]);
+	scanf("%s",pass);
 	c=check(pass,password);
 	if(c)
 	{
