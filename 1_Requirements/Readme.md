@@ -41,7 +41,7 @@ This is the simple implementaion of the Bank Management System and therefore doe
 <p align="justify">The Application can be used in Banks. </p>
 
 ## How:
-<p align="justify"> The Application is simple to use and is completely developed in c.Application provides simple user interface through which user can easily understand the system and perform actions.</p>
+<p align="justify"> The Application is simple to use and is completely developed in C.Application provides simple user interface through which user can easily understand the system and perform actions.</p>
 
 ### Detail Requirements
 
@@ -112,7 +112,7 @@ This is the simple implementaion of the Bank Management System and therefore doe
   </tr>
    <tr>
     <td>LLR03</td>
-    <td>Search for an account will be successful if account is found else "Record not found" will be printed./td>
+    <td>Search for an account will be successful if account is found else "Record not found" will be printed.</td>
     <td>Technical</td>
     <td>implemented</td>
   </tr>
