@@ -59,24 +59,28 @@ This is the simple implementaion of the Bank Management System and therefore doe
     <td>implemented</td>
   </tr>
   
+<tr>  
    <td>HLR02</td>
     <td>User should be able to add account details of the customers</td>
     <td>Technical</td>
     <td>implemented</td>
   </tr>
   
+  <tr>
    <td>HLR03</td>
     <td>user should be able to deposit and withdraw cash as per the customer requirement.</td>
     <td>Technical</td>
     <td>implemented</td>
   </tr>
   
+  <tr>
    <td>HLR04</td>
     <td>User should be able to search for an account.</td>
     <td>Technical</td>
     <td>implemented</td>
   </tr>
   
+  <tr>
   <td>HLR05</td>
     <td>User should be able to display account information</td>
     <td>Technical</td>
