@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "bank.h"
+//This Function is to check password
 int check(char *pass,char *password)
 {
 	
@@ -8,7 +9,7 @@ int check(char *pass,char *password)
 	 return c;
 		
 }
-	
+//This Function is to add customer account details	
 void account( customer list[80], int s)
 {
     int i;
@@ -40,7 +41,7 @@ void account( customer list[80], int s)
 		
     } 
 }
-
+// This Function is to display account information
 void display( customer list[80], int s)
 {
     int i;
@@ -52,7 +53,7 @@ void display( customer list[80], int s)
             list[i].balance);
     } 
 }
-
+//This function is to search for an account using account number
 int search(customer list[80], int s, int number)
 {
     int i;
@@ -66,7 +67,7 @@ int search(customer list[80], int s, int number)
     }
     return  - 1;
 }
-
+//This function is used to deposit cash as per the customer requirement
 void deposit( customer list[], int s, int number, int amt)
 {
     int i = search(list, s, number);
@@ -79,7 +80,7 @@ void deposit( customer list[], int s, int number, int amt)
         list[i].balance += amt;
     }
 }
-
+// This function is used to withdraw cash as per the customer requirement
 void withdraw( customer list[], int s, int number, int amt)
 {
     int i = search(list, s, number);
