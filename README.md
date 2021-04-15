@@ -30,7 +30,10 @@
  <th></th>
  <th></th>
  </tr>
+ [![Unit Testing - Unity](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/unity.yml/badge.svg?branch=main)](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/unity.yml)</td>
  
+[![CI-Coverage](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/code_coverage.yml/badge.svg)](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/code_coverage.yml)
+
  
 </table>
  
