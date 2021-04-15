@@ -9,7 +9,7 @@ int main()
 	
 	system("color 0A");
 
-    struct customer data[20];
+    customer data[20];
     int n,choice, account_no, amount, index,c;
     char pass[9],password[9]="archana1";
 	login:
