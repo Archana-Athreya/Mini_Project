@@ -1,17 +1,12 @@
 #ifndef BANK_H
 #define BANK_H
-struct date
-{
-	
-    int month,day,year;
-};
- struct customer
+typedef struct customer
 {
     int account_no;
     char name[80];
     int balance;
-	//struct date dob;
-} ;
+	
+} customer ;
 void account(struct customer[], int);
 void display(struct customer[], int);
 int search(struct customer[], int, int);
