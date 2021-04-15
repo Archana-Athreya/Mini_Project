@@ -10,7 +10,7 @@ int main()
 	system("color 0A");
 
     struct customer data[20];
-    int n,i,choice, account_no, amount, index,c;
+    int n,choice, account_no, amount, index,c;
     char pass[9],password[9]="archana1";
 	login:
     printf("\n\n\t\tEnter the password to login at least 8 characters long:");
