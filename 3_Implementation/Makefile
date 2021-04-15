@@ -3,7 +3,12 @@
 PROJ_NAME = bank_proj
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-SRC =src/Functions.c
+SRC =src/addaccount.c \
+src/display.c \
+src/searchacc.c \
+src/depcash.c \
+src/withdrawcash.c \
+src/checkpasswd.c 
 
 
 Bank_SRC = test.c
