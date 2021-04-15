@@ -3,13 +3,13 @@
 #include "bank.h"
 void setUp(){}
 void tearDown(){}
-void testadd(void){
+void testforpasswd(void){
 	TEST_ASSERT_EQUAL(0,check("archana1","archana1"));
 	
 }
 int main()
 {
 	UNITY_BEGIN();
-	RUN_TEST(testadd);
+	RUN_TEST(testforpasswd);
 	return UNITY_END();
 }
