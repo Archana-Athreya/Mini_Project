@@ -1,4 +1,5 @@
 # Bank Management System
+Build | Code Quality | Unity | [Git Inspector](using github.io option)
 [![C/C++ CI - Build Status](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/c-cpp.yml)
 [![CI-Coverage](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/code_coverage.yml/badge.svg)](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/code_coverage.yml)
 [![Code Quality - Static Code - Cppcheck](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Archana-Athreya/Mini_Project/actions/workflows/cppcheck.yml)
