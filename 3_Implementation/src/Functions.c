@@ -9,7 +9,7 @@ int check(char *pass,char *password)
 		
 }
 	
-void account(struct customer list[80], int s)
+void account( customer list[80], int s)
 {
     int i;
     for (i = 0; i < s; i++)
@@ -41,7 +41,7 @@ void account(struct customer list[80], int s)
     } 
 }
 
-void display(struct customer list[80], int s)
+void display( customer list[80], int s)
 {
     int i;
 
@@ -53,7 +53,7 @@ void display(struct customer list[80], int s)
     } 
 }
 
-int search(struct customer list[80], int s, int number)
+int search(customer list[80], int s, int number)
 {
     int i;
 
@@ -67,7 +67,7 @@ int search(struct customer list[80], int s, int number)
     return  - 1;
 }
 
-void deposit(struct customer list[], int s, int number, int amt)
+void deposit( customer list[], int s, int number, int amt)
 {
     int i = search(list, s, number);
     if (i ==  - 1)
@@ -80,7 +80,7 @@ void deposit(struct customer list[], int s, int number, int amt)
     }
 }
 
-void withdraw(struct customer list[], int s, int number, int amt)
+void withdraw( customer list[], int s, int number, int amt)
 {
     int i = search(list, s, number);
     if (i ==  - 1)
