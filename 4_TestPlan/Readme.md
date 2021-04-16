@@ -16,7 +16,7 @@
     <th>Check if entered password is correct or not</th>
     <th>Password string</th>
     <th>Login will be successful</th>
-    <th>PASS/th>
+    <th>PASS</th>
     <th>Requirement based</th>
   </tr>
    <tr>
