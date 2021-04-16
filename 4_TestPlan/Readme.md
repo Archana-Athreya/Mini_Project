@@ -22,7 +22,7 @@
    <tr>
     <th>H_02</th>
     <th>Check if search for an account is successful</th>
-    <th>Array of structure,number of entryies and account number to be searched</th>
+    <th>Array of structure,number of entries and account number to be searched</th>
     <th>0</th>
     <th>0 PASS</th>
     <th>Requirement based</th>
@@ -30,7 +30,7 @@
   <tr>
     <th>H_03</th>
     <th>Check if search for an account is unsuccessful</th>
-    <th>Array of structure,number of entryies and account number to be searched</th>
+    <th>Array of structure,number of entries and account number to be searched</th>
     <th>-1</th>
     <th>-1 PASS</th>
     <th>Requirement based</th>
